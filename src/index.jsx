@@ -7,17 +7,10 @@ import {
   Routes, 
   Route
 } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
-  <BrowserRouter>
-  <Routes>
-    <Route path="/" index element={<App />}/>
-    <Route path="/about" element={<About />}>
-      <Route path="history" element={<History />}/>
-      </Route>
-    <Route path="/contact" element={<Contact />}/>
-  </Routes>
-  </BrowserRouter>
+  <App />
 );
